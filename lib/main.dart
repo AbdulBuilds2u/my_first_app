@@ -10,9 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'application',
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.teal),
+       colorScheme: ColorScheme.fromSeed(
+  seedColor: Colors.teal,
+),
       ),
       home: const MyHomePage(title: 'Whatsapp'),
     );
@@ -38,31 +41,37 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
-      body: ListView(
+      body: Container(
+    color: Colors.white,
+    child: ListView(
         children: [
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.blue,
+              backgroundImage: NetworkImage(
+                "https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/8829c0e55f0522cea7b589fec420db88.jpg",
             ),
+            ),
+              
+            
             title: Text("Ghani"),
             subtitle: Text("today is my flutter class"),
-            trailing: Text("10:12 AM"),
+            trailing: Icon(Icons.notifications_active , color : Colors.blue),
           ),
           ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.teal,
             ),
             title: Text("Ahmed"),
-            subtitle: Text("How are y?"),
+            subtitle: Text("How are u?"),
             trailing: Text("11:04 AM"),
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.orange,
+              backgroundColor: Colors.blue,
             ),
             title: Text("Sahil"),
             subtitle: Text("I don't know!"),
-            trailing: Text("01:00 pM"),
+            trailing: Icon(Icons.notifications_active , color : Colors.blue),
           ),
           ListTile(
             leading: CircleAvatar(
@@ -70,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             title: Text("Zain"),
             subtitle: Text("where are u righ now?"),
-            trailing: Text("05:15 pM"),
+            trailing: Text("yesterday"),
           ),
           ListTile(
             leading: CircleAvatar(
@@ -128,8 +137,13 @@ class _MyHomePageState extends State<MyHomePage> {
             subtitle: Text("Where are u"),
             trailing: Text("04:38 pM"),
           ),
+       
         ],
+       ),
       ),
+      
     );
+    
   }
+  
 }
