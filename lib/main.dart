@@ -52,20 +52,20 @@ class _MyHomePageState extends State<MyHomePage> {
     child: ListView(
         children: [
           ListTile(
+        //     leading: CircleAvatar(
+        //     radius: 25,
+        //     backgroundColor: Colors.teal,
+        //     child: Icon(
+        //     Icons.person,
+        //     color: Colors.white,
+        //  ),
+        //  ),
             leading: CircleAvatar(
-            radius: 25,
-            backgroundColor: Colors.teal,
-            child: Icon(
-            Icons.person,
-            color: Colors.white,
-         ),
-         ),
-            // leading: CircleAvatar(
-              
-            //   backgroundImage: NetworkImage(
-            //     "https://i.pravatar.cc/150?img=12",
-            // ),
-            // ),
+              radius: 25,
+              backgroundImage: NetworkImage(
+                "https://i.pravatar.cc/150?img=12",
+            ),
+            ),
               
             
             title: Text("Ghani"),
@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.red,
             ),
             title: Text("Sahil"),
             subtitle: Text("I don't know!"),
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.blue,
             ),
             title: Text("Zain"),
             subtitle: Text("where are u righ now?"),
@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.yellow,
             ),
             title: Text("Samad"),
             subtitle: Text("i am busy rn."),
@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.brown,
             ),
             title: Text("Hameed"),
             subtitle: Text("I want to donate my 10% of my salary."),
@@ -120,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.purple,
             ),
             title: Text("Shahid"),
             subtitle: Text("I'll be there"),
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.green,
             ),
             title: Text("Shiraz"),
             subtitle: Text("I've completed my project on time."),
@@ -138,7 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.grey,
             ),
             title: Text("Muzammil"),
             subtitle: Text("why"),
@@ -147,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.orange,
             ),
             title: Text("Ahad"),
             subtitle: Text("i sleeping right now"),
@@ -156,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ListTile(
             leading: CircleAvatar(
               radius: 25,
-              backgroundColor: Colors.teal,
+              backgroundColor: Colors.black,
             ),
             title: Text("Saeed"),
             subtitle: Text("Where are u"),
