@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'application',
       theme: ThemeData(
        colorScheme: ColorScheme.fromSeed(
-  seedColor: Colors.teal,
+  seedColor: Colors.green,
 ),
       ),
       home: const MyHomePage(title: 'Whatsapp'),
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.teal.shade800,
         title: Text(
   widget.title,
   style: TextStyle(
@@ -53,10 +53,19 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           ListTile(
             leading: CircleAvatar(
-              backgroundImage: NetworkImage(
-                "https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/8829c0e55f0522cea7b589fec420db88.jpg",
-            ),
-            ),
+            radius: 25,
+            backgroundColor: Colors.teal,
+            child: Icon(
+            Icons.person,
+            color: Colors.white,
+         ),
+         ),
+            // leading: CircleAvatar(
+              
+            //   backgroundImage: NetworkImage(
+            //     "https://i.pravatar.cc/150?img=12",
+            // ),
+            // ),
               
             
             title: Text("Ghani"),
@@ -65,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
+              radius: 25,
               backgroundColor: Colors.teal,
             ),
             title: Text("Ahmed"),
@@ -73,7 +83,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.blue,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Sahil"),
             subtitle: Text("I don't know!"),
@@ -81,7 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.purple,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Zain"),
             subtitle: Text("where are u righ now?"),
@@ -89,7 +101,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.red,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Samad"),
             subtitle: Text("i am busy rn."),
@@ -97,15 +110,17 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.yellow,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Hameed"),
             subtitle: Text("I want to donate my 10% of my salary."),
-            trailing: Text("03:05 pM"),
+            trailing: Text("yerterday"),
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.green,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Shahid"),
             subtitle: Text("I'll be there"),
@@ -113,7 +128,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.brown,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Shiraz"),
             subtitle: Text("I've completed my project on time."),
@@ -121,7 +137,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.black,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Muzammil"),
             subtitle: Text("why"),
@@ -129,7 +146,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.grey,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Ahad"),
             subtitle: Text("i sleeping right now"),
@@ -137,7 +155,8 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           ListTile(
             leading: CircleAvatar(
-              backgroundColor: Colors.blue,
+              radius: 25,
+              backgroundColor: Colors.teal,
             ),
             title: Text("Saeed"),
             subtitle: Text("Where are u"),
