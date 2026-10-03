@@ -124,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             title: Text("Shahid"),
             subtitle: Text("I'll be there"),
-            trailing: Text("04:25 pM"),
+            trailing: Text("04:22 pM"),
           ),
           ListTile(
             leading: CircleAvatar(
