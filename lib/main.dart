@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   seedColor: Colors.green,
 ),
       ),
-      home: const MyHomePage(title: 'Whatsapp'),
+      home: const MyHomePage(title: 'chats'),
     );
   }
 }
