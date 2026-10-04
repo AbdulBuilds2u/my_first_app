@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {  
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'application',
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
             leading: CircleAvatar(
               radius: 25,
               backgroundImage: NetworkImage(
-                "https://i.pravatar.cc/150?img=12",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGFTbZgi6mf-0VAun4OBqMhGhwUr_Hs0HvwShY-KCEFg&s=10",
             ),
             ),
               
