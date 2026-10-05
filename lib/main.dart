@@ -185,6 +185,15 @@ class _MyHomePageState extends State<MyHomePage> {
        
         ],
        ),
+       
+      ),
+      drawer: Drawer(
+        child: ListTile(
+          leading: CircleAvatar(
+            backgroundColor: Colors.blue),
+          title: Text("settings"),
+          trailing: Icon(Icons.settings),
+        ),
       ),
       
     );
