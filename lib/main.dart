@@ -188,11 +188,25 @@ class _MyHomePageState extends State<MyHomePage> {
        
       ),
       drawer: Drawer(
-        child: ListTile(
-          leading: CircleAvatar(
-            backgroundColor: Colors.blue),
-          title: Text("settings"),
-          trailing: Icon(Icons.settings),
+        child: Column(
+          children: [
+            ListTile(
+              leading: Icon(Icons.settings, color: Colors.blue),
+              title: Text("settings"),
+            ),
+            ListTile(
+              leading: Icon(Icons.info, color: Colors.blue),
+              title: Text("About"),
+            ),
+            ListTile(
+              leading: Icon(Icons.person, color: Colors.blue),
+              title: Text("Profile"),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_box, color: Colors.blue),
+              title: Text("Account"),
+            ),
+          ],
         ),
       ),
       
